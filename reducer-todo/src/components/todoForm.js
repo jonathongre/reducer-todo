@@ -15,7 +15,8 @@ const TodoForm = ({ dispatch }) => {
             id: new Date()
 
         }
-        dispatch({ type: 'ADD_TODO', payload: newItem })    
+        dispatch({ type: 'ADD_TODO', payload: newItem })
+        setItem('')    
         
     }
 
