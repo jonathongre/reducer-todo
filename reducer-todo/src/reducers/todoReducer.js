@@ -2,17 +2,17 @@ export const initialState = [
     {
       item: "Make Bed",
       completed: false,
-      id: 1
+      id: new Date()
     },
     {
         item: "Brew Coffee",
         completed: false,
-        id: 2
+        id: new Date()
       },
       {
         item: "Take Shower",
         completed: false,
-        id: 3
+        id: new Date()
       },
   ];
   
