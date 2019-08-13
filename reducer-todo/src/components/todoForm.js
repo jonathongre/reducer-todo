@@ -33,8 +33,8 @@ const TodoForm = ({ dispatch }) => {
     return (
         <div>
             <form className='taskForm' onSubmit={addTask}>
-                <h1>New Task</h1>
-                <input type='text' name='item' onChange={handleChange} value={item.item} />
+                <h1>Today's Agenda</h1>
+                <input type='text' name='item' placeholder='New Task' onChange={handleChange} value={item.item} />
                 <h4>To be completed:</h4>
                 <input type='date' name='dueDate' onChange={handleChange} value={item.dueDate} />
                 <button className='addbtn'>Add Task</button>
