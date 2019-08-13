@@ -9,9 +9,9 @@ const TodoList = () => {
     const clearCompleted = () => dispatch({ type: 'CLEAR_COMPLETED'})
 
     return (
-        <div>
+        <div className='todos'>
             <TodoForm dispatch={dispatch} />
-            <button onClick={clearCompleted} >Clear Completed</button>
+            <button className='clrbtn' onClick={clearCompleted} >Clear Completed</button>
             {todos.map(todo => (
             <Todo key={todo.id} todo={todo} dispatch={dispatch} />
       ))}
