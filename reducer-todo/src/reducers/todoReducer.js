@@ -28,6 +28,8 @@ export const initialState = [
                     : todo
                 )
             ];
+        case "CLEAR_COMPLETED":
+            return [...state.filter(todo => !todo.completed)];
       default:
         return state;
     }
